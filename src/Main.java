@@ -20,16 +20,16 @@ public class Main {
         }
     }
 
-    //Метод_к_2_задаче
-    public static void determinationDaysDeliveryOfDistance(int deliveryDistance) {
+    //Метод_к_3_задаче
+    public static int determinationDaysDeliveryOfDistance(int deliveryDistance) {
         if (deliveryDistance < 20) {
-            System.out.println("Потребуется дней: " + 1);
+            return 1;
         } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
-            System.out.println("Потребуется дней: " + 2);
+            return 2;
         } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
-            System.out.println("Потребуется дней: " + 3);
+            return 3;
         } else {
-            System.out.println("Доставки нет.");
+            return 0;
         }
     }
 
@@ -43,13 +43,23 @@ public class Main {
 
         //Задание2
         System.out.println("Задание2");
+        //IOS=0
+        //Android=1
         int clientOS = 0;
         int clientDeviceYear = 2015;
         determineVersionApplication(clientOS, clientDeviceYear);
 
         //Задание3
         System.out.println("Задание3");
-        int deliveryDistance = 95;
-        determinationDaysDeliveryOfDistance(deliveryDistance);
+        int deliveryDistance = 60;
+        if (determinationDaysDeliveryOfDistance(deliveryDistance) == 1) {
+            System.out.println("Потребуется дней: " + determinationDaysDeliveryOfDistance(deliveryDistance));
+        } else if (determinationDaysDeliveryOfDistance(deliveryDistance) == 2) {
+            System.out.println("Потребуется дней: " + determinationDaysDeliveryOfDistance(deliveryDistance));
+        } else if (determinationDaysDeliveryOfDistance(deliveryDistance) == 3) {
+            System.out.println("Потребуется дней: " + determinationDaysDeliveryOfDistance(deliveryDistance));
+        } else if (determinationDaysDeliveryOfDistance(deliveryDistance) == 0) {
+            System.out.println("Доставки нет.");
+        }
     }
 }
