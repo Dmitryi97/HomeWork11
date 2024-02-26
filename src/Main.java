@@ -62,9 +62,9 @@ public class Main {
         //Задание3
         System.out.println("Задание3");
         int deliveryDistance = 60;
-        deliveryDistance = determinуDaysDelivery(deliveryDistance);
-        if (deliveryDistance != 0) {
-            System.out.println("Колличество дней доставки: " + deliveryDistance);
+        int deliveryDауs = determinуDaysDelivery(deliveryDistance);
+        if (deliveryDауs != 0) {
+            System.out.println("Колличество дней доставки: " + deliveryDауs);
         } else {
             System.out.println("Доставки нет!");
         }
